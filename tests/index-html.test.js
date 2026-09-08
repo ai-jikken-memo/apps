@@ -23,3 +23,17 @@ test('style.cssを読み込む', () => {
 test('viewportメタタグを持つ(レスポンシブ対応)', () => {
   assert.match(html, /name="viewport"/);
 });
+
+test('見出し下にタップを促す案内文がある', () => {
+  assert.match(html, /class="page-lead"/);
+  assert.match(html, /タップ/);
+});
+
+test('ホーム画面追加の案内(iPhone/Android両方)がある', () => {
+  assert.match(html, /class="home-screen-guide"/);
+  assert.match(html, /iPhone/);
+  assert.match(html, /Android/);
+  assert.match(html, /Safari/);
+  assert.match(html, /Chrome/);
+  assert.match(html, /ホーム画面に追加/);
+});

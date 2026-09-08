@@ -84,6 +84,13 @@ header h1 {
   padding: 0 1.1rem 3rem;
 }
 
+.page-lead {
+  margin: 0 0 1.3rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--terracotta-deep);
+}
+
 .app-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -141,8 +148,60 @@ header h1 {
   padding: 2rem 0.5rem;
 }
 
+.home-screen-guide {
+  margin-top: 2.5rem;
+  background: var(--cream);
+  border-radius: var(--radius-lg);
+  padding: 1.6rem 1.5rem;
+}
+
+.home-screen-guide h2 {
+  margin: 0 0 0.4rem;
+  font-family: 'Shippori Antique B1', 'Zen Kaku Gothic New', sans-serif;
+  font-weight: 400;
+  font-size: 1.15rem;
+  color: var(--navy);
+}
+
+.home-screen-guide-lead {
+  margin: 0 0 1.2rem;
+  font-size: 0.85rem;
+  color: var(--text-soft);
+}
+
+.home-screen-guide-cols {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.2rem;
+}
+
+.home-screen-guide-col h3 {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  color: var(--terracotta-deep);
+}
+
+.home-screen-guide-col:nth-child(2) h3 {
+  color: var(--navy);
+}
+
+.home-screen-guide-col ol {
+  margin: 0;
+  padding-left: 1.3rem;
+  font-size: 0.85rem;
+  color: var(--text);
+}
+
+.home-screen-guide-col li {
+  margin-bottom: 0.35rem;
+}
+
 @media (min-width: 640px) {
   .app-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .home-screen-guide-cols {
     grid-template-columns: repeat(2, 1fr);
   }
 }
