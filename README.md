@@ -11,7 +11,7 @@
   "id": "新しいアプリのid",
   "name": "アプリ名",
   "description": "一言説明",
-  "url": "https://uranai-raiza.github.io/新しいアプリ/"
+  "url": "https://ai-jikken-memo.github.io/新しいアプリ/"
 }
 ```
 

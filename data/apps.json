@@ -3,12 +3,12 @@
     "id": "cocktail-finder",
     "name": "宅飲みミックス",
     "description": "家飲みの余り物から、今すぐできる飲み方を提案してくれるツール",
-    "url": "https://uranai-raiza.github.io/cocktail-finder/"
+    "url": "https://ai-jikken-memo.github.io/cocktail-finder/"
   },
   {
     "id": "ai-video-cost-checker",
     "name": "AI動画コストチェッカー",
     "description": "AI動画生成の実質コストをその場で計算できるツール",
-    "url": "https://uranai-raiza.github.io/ai-video-cost-checker/"
+    "url": "https://ai-jikken-memo.github.io/ai-video-cost-checker/"
   }
 ]
