@@ -1,0 +1,148 @@
+:root {
+  color-scheme: light;
+  --terracotta: #c1502e;
+  --terracotta-deep: #93381f;
+  --navy: #202b47;
+  --navy-deep: #141b2e;
+  --cream: #f7ede1;
+  --bg: #ffffff;
+  --text: #2c241f;
+  --text-soft: #6d6157;
+  --radius-lg: 28px;
+  --radius-md: 22px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--terracotta);
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Zen Kaku Gothic New', 'Hiragino Kaku Gothic ProN', sans-serif;
+  line-height: 1.6;
+}
+
+h1,
+.brand-label,
+.app-card-title {
+  font-family: 'Shippori Antique B1', 'Zen Kaku Gothic New', sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 2rem 1.1rem 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header-badge {
+  flex: none;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--terracotta);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 20px -6px rgba(193, 80, 46, 0.55);
+}
+
+.brand-label {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--terracotta-deep);
+  letter-spacing: 0.08em;
+}
+
+header h1 {
+  margin: 0.2rem 0 0.35rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: var(--navy);
+  letter-spacing: 0.02em;
+}
+
+.lead {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-soft);
+  font-weight: 500;
+}
+
+.app-layout {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.1rem 3rem;
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.1rem;
+}
+
+.app-card {
+  background: var(--cream);
+  border-radius: var(--radius-lg);
+  padding: 1.6rem 1.5rem;
+  box-shadow: 0 16px 30px -16px rgba(44, 36, 31, 0.25);
+  border-top: 6px solid var(--terracotta);
+}
+
+.app-card:nth-child(even) {
+  border-top-color: var(--navy);
+}
+
+.app-card-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--navy);
+}
+
+.app-card-description {
+  margin: 0 0 1.1rem;
+  font-size: 0.9rem;
+  color: var(--text-soft);
+}
+
+.app-card-link {
+  display: inline-block;
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  background: var(--terracotta);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.app-card:nth-child(even) .app-card-link {
+  background: var(--navy);
+}
+
+.app-card-link:hover {
+  opacity: 0.9;
+}
+
+.empty-state {
+  text-align: center;
+  color: var(--text-soft);
+  font-weight: 500;
+  padding: 2rem 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .app-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

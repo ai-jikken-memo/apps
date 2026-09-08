@@ -1,0 +1,11 @@
+{
+  "name": "ai-jikken-memo-apps",
+  "version": "1.0.0",
+  "description": "AI実験メモ — 作った静的Webアプリ一覧ページ",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "dev": "node serve.js"
+  }
+}
