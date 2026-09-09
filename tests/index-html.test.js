@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 
 const html = readFileSync(new URL('../index.html', import.meta.url), 'utf8');
+const script = readFileSync(new URL('../script.js', import.meta.url), 'utf8');
 
 test('アプリ一覧の入れ物を持つ', () => {
   assert.match(html, /id="app-list"/);
@@ -36,4 +37,8 @@ test('ホーム画面追加の案内(iPhone/Android両方)がある', () => {
   assert.match(html, /Safari/);
   assert.match(html, /Chrome/);
   assert.match(html, /ホーム画面に追加/);
+});
+
+test('アプリ一覧データは古いキャッシュを使わず取得する', () => {
+  assert.match(script, /cache:\s*['"]no-store['"]/);
 });
