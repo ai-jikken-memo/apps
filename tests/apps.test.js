@@ -4,8 +4,8 @@ import { readFileSync } from 'node:fs';
 
 const apps = JSON.parse(readFileSync(new URL('../data/apps.json', import.meta.url), 'utf8'));
 
-test('2つのアプリが登録されている', () => {
-  assert.equal(apps.length, 2);
+test('3つのアプリが登録されている', () => {
+  assert.equal(apps.length, 3);
 });
 
 test('各アプリはid・name・description・urlを持つ', () => {

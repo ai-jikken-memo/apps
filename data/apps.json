@@ -10,5 +10,11 @@
     "name": "AI動画コストチェッカー",
     "description": "AI動画生成の実質コストをその場で計算できるツール",
     "url": "https://ai-jikken-memo.github.io/ai-video-cost-checker/"
+  },
+  {
+    "id": "warikan-calculator",
+    "name": "お気楽割り勘計算機",
+    "description": "飲まない人や遅刻した人も含めて、公平な支払額をすぐ計算できるツール",
+    "url": "https://ai-jikken-memo.github.io/warikan-calculator/"
   }
 ]
