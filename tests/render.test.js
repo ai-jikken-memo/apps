@@ -16,6 +16,18 @@ test('renderAppCardは名前・説明・リンクを含む', () => {
   assert.match(html, /href="https:\/\/example\.com\/sample-app\/"/);
 });
 
+test('登録済みアプリは専用ビジュアルを含む', () => {
+  const html = renderAppCard({
+    id: 'cocktail-finder',
+    name: '宅飲みミックス',
+    description: '説明',
+    url: 'https://example.com/',
+  });
+  assert.match(html, /assets\/cocktail-mix\.webp/);
+  assert.match(html, /<img/);
+  assert.match(html, /fetchpriority="high"/);
+});
+
 test('renderAppCardのリンクは新しいタブで開く', () => {
   const html = renderAppCard(app);
   assert.match(html, /target="_blank"/);

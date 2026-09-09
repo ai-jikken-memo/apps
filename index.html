@@ -3,53 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI実験メモ アプリ一覧</title>
-  <meta name="description" content="AI実験メモが作った静的Webアプリをまとめて紹介するページ">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#f2f4ef">
+  <meta name="description" content="AI実験メモが作った、無料で使える小さなWebアプリの一覧です。">
+  <title>作ったアプリたち｜AI実験メモ</title>
+  <link rel="icon" href="data:,">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="header-badge" aria-hidden="true">
-      <svg viewBox="0 0 24 24" width="22" height="22" fill="#fff" fill-opacity="0.9">
-        <path d="M12 2 L14.4 9.2 L22 9.6 L16 14.4 L18 22 L12 17.6 L6 22 L8 14.4 L2 9.6 L9.6 9.2 Z"/>
-      </svg>
-    </div>
-    <div>
-      <p class="brand-label">AI実験メモ</p>
-      <h1>作ったアプリたち</h1>
-      <p class="lead">AIと一緒に作った、無料で使える小さなツールをまとめました。</p>
-    </div>
-  </header>
-  <main class="app-layout">
-    <p class="page-lead">気になるアプリを見つけてタップしてね♪</p>
-    <div id="app-list" class="app-grid"></div>
-
-    <section class="home-screen-guide">
-      <h2>📱 ホーム画面に追加すると便利です</h2>
-      <p class="home-screen-guide-lead">このページをホーム画面に追加すると、アプリのように1タップで開けます。</p>
-      <div class="home-screen-guide-cols">
-        <div class="home-screen-guide-col">
-          <h3>iPhone(Safari)</h3>
-          <ol>
-            <li>Safariでこのページを開く</li>
-            <li>共有ボタン(四角に上矢印)をタップ</li>
-            <li>「ホーム画面に追加」を選ぶ</li>
-          </ol>
-        </div>
-        <div class="home-screen-guide-col">
-          <h3>Android(Chrome)</h3>
-          <ol>
-            <li>Chromeでこのページを開く</li>
-            <li>メニュー(縦三点)をタップ</li>
-            <li>「ホーム画面に追加」を選ぶ</li>
-          </ol>
-        </div>
+  <a class="skip-link" href="#apps">アプリ一覧へ移動</a>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="brand-block">
+        <a class="brand" href="./" aria-label="AI実験メモ アプリ一覧の先頭へ">
+          <span>AI実験メモ</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.4 3.6c-7.8.3-12.7 3.2-14.6 8.8-1.1 3.2.1 6.4 2.7 7.1 2.5.7 5.2-.8 6.5-3.5 1.6-3.2 1.5-7.1 5.4-12.4Z"/>
+            <path d="M5.1 21c2.8-5.1 6.2-8.6 11.3-11.7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          </svg>
+        </a>
+        <h1>作ったアプリたち</h1>
+        <p>AIと一緒に作った、無料で使える小さなツールをまとめました。</p>
       </div>
-    </section>
-  </main>
+      <a class="menu-link" href="#home-screen-guide" aria-label="ホーム画面への追加方法を見る">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+      </a>
+      <p class="maker-note" aria-hidden="true">つくるって、<br>たのしい。</p>
+    </header>
+
+    <main id="apps">
+      <div id="app-list" class="app-list" aria-live="polite"></div>
+
+      <details class="home-screen-guide" id="home-screen-guide">
+        <summary>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="6" y="2.5" width="12" height="19" rx="2"/>
+            <path d="M10 5h4M11 18.5h2"/>
+          </svg>
+          <span>ホーム画面に追加する方法</span>
+          <svg class="summary-arrow" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m9 5 7 7-7 7"/>
+          </svg>
+        </summary>
+        <div class="guide-content">
+          <section>
+            <h2>iPhone（Safari）</h2>
+            <ol>
+              <li>Safariでこのページを開く</li>
+              <li>共有ボタン（四角に上矢印）を押す</li>
+              <li>「ホーム画面に追加」を選ぶ</li>
+            </ol>
+          </section>
+          <section>
+            <h2>Android（Chrome）</h2>
+            <ol>
+              <li>Chromeでこのページを開く</li>
+              <li>右上の縦三点を押す</li>
+              <li>「ホーム画面に追加」を選ぶ</li>
+            </ol>
+          </section>
+        </div>
+      </details>
+    </main>
+  </div>
   <script type="module" src="script.js"></script>
 </body>
 </html>

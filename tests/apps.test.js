@@ -22,8 +22,8 @@ test('idはすべて一意', () => {
   assert.equal(new Set(ids).size, ids.length);
 });
 
-test('宅飲みミックスとAI動画コストチェッカーが含まれる', () => {
+test('宅飲みミックスとAI動画生成コストチェッカーが含まれる', () => {
   const names = apps.map((a) => a.name);
   assert.ok(names.includes('宅飲みミックス'));
-  assert.ok(names.includes('AI動画コストチェッカー'));
+  assert.ok(names.includes('AI動画生成コストチェッカー'));
 });

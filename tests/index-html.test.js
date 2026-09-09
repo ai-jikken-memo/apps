@@ -25,11 +25,6 @@ test('viewportメタタグを持つ(レスポンシブ対応)', () => {
   assert.match(html, /name="viewport"/);
 });
 
-test('見出し下にタップを促す案内文がある', () => {
-  assert.match(html, /class="page-lead"/);
-  assert.match(html, /タップ/);
-});
-
 test('ホーム画面追加の案内(iPhone/Android両方)がある', () => {
   assert.match(html, /class="home-screen-guide"/);
   assert.match(html, /iPhone/);
@@ -37,6 +32,11 @@ test('ホーム画面追加の案内(iPhone/Android両方)がある', () => {
   assert.match(html, /Safari/);
   assert.match(html, /Chrome/);
   assert.match(html, /ホーム画面に追加/);
+});
+
+test('ホーム画面追加の案内は折りたたみ式である', () => {
+  assert.match(html, /<details[^>]*class="home-screen-guide"/);
+  assert.match(html, /<summary>/);
 });
 
 test('アプリ一覧データは古いキャッシュを使わず取得する', () => {

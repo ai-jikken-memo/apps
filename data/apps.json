@@ -7,7 +7,7 @@
   },
   {
     "id": "ai-video-cost-checker",
-    "name": "AI動画コストチェッカー",
+    "name": "AI動画生成コストチェッカー",
     "description": "AI動画生成の実質コストをその場で計算できるツール",
     "url": "https://ai-jikken-memo.github.io/ai-video-cost-checker/"
   },
